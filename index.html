@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link src = "assets/css/style.css">
-    <title>Document</title>
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <title>Horse Quiz</title>
 </head>
 <body>
-    
-
+    <header>
+        <h1>Random Horse Trivia</h1>
+        <button id="start-btn">Push to Start</button>
+    </header>
+    <main class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+            </div>
+        </div>
+        <div id="correct-answer" class="hide">
+            Correct! 
+        </div>
+        <div id="wrong-answer" class="hide">
+            Incorrect 
+        </div>
+    </main>
+    <footer>
+        <button>View Highscores</button>
+        <p>Timer</p>
+    </footer>
   <script src = "assets/js/script.js"></script>  
 </body>
 </html>
